@@ -9,8 +9,8 @@ const record = [
   ]
 
 function superbowlWin(array) {
-    const result = array.find(array => array.result === 'W')
-        return result ? result.year : undefined
+    const findIfWin = array.find(array => array.result === 'W')
+        return findIfWin ? findIfWin.year : undefined
 }
 console.log(superbowlWin(record))
 
